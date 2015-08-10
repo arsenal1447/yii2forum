@@ -8,12 +8,12 @@ $this->title = 'My Yii Forum';
 
 
     <div class="body-content">
-    
-       <?php 
+
+       <?php
        		echo $message.'<br>';
-       		
-       		echo '<a href="'.$this->homeUrl.'">返回首页</a>';
+
+       		echo '<a href="'.Yii::$app->homeUrl.'">返回首页</a>';
        ?>
-       
+
     </div>
 </div>
