@@ -23,25 +23,28 @@ $this->params['breadcrumbs'][] = $this->title;
     </p>
 
     <table class="table">
-	    <tr class="tb_header">
-	      <th>ID</th>
-	      <th>用户</th>
-	      
-	      <th width="120">do</th>
-	    </tr>
-		<?php foreach ($rows as $row ): ?>
-		<tr>
-		<td><?php echo $row['id']?></td>
-		<td><?php echo $row['username']?></td>
-		<td>
-			
-			<?= Html::a('设置角色', ['role','id'=>$row->id]) ?>
-		
-			<a href="index.php?r=user/update&id=<?php echo $row->id?>"><span class="glyphicon glyphicon-pencil"></span></a>
-			<a href="index.php?r=user/delete&id=<?php echo $row->id?>" data-confirm="Are you sure to delete this item?" data-method="post"><span class="glyphicon glyphicon-trash"></span></a>
-		</td>
-		</tr>
-		<?php endforeach;?>
-	</table>
-	
+        <tr class="tb_header">
+          <th>ID</th>
+          <th>用户</th>
+
+          <th width="120">do</th>
+        </tr>
+        <?php foreach ($rows as $row ): ?>
+        <tr>
+        <td><?php echo $row['id']?></td>
+        <td><?php echo $row['username']?></td>
+        <td>
+            <?= Html::a('设置角色', ['role','id'=>$row->id]) ?>
+
+            <a href="index.php?r=user/update&id=<?php echo $row->id?>">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </a>
+            <a href="index.php?r=user/delete&id=<?php echo $row->id?>" data-confirm="Are you sure to delete this item?" data-method="post">
+                <span class="glyphicon glyphicon-trash"></span>
+            </a>
+        </td>
+        </tr>
+        <?php endforeach;?>
+    </table>
+
 </div>

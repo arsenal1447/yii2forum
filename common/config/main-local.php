@@ -15,7 +15,7 @@ return [
         ],
         'request' => [
             'enableCookieValidation' => true,
-            'cookieValidationKey' => 'arsenal',
+            'cookieValidationKey' => 'your-validation-key',
         ],
     ],
 ];
