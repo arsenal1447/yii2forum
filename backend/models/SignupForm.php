@@ -40,7 +40,7 @@ class SignupForm extends Model
      * @return User|null the saved model or null if saving fails
      */
     public function signup()
-    {die('yyy');
+    {
         if ($this->validate()) {
             return User::create($this->attributes);
         }
