@@ -15,7 +15,7 @@ use frontend\base\BaseFrontController;
 use common\models\Board;
 
 /**
- * Site controller  zxx add e1
+ * Site controller  zxx add second time to test merge confilct
  */
 class SiteController extends BaseFrontController
 {
@@ -193,7 +193,8 @@ class SiteController extends BaseFrontController
                         'model' => $model
                 ]);
     }
-    //test branch merge to master
+    //second time test branch merge to master sencode time
+    //aiyou  bucuo o
     public function actionResetPassword($token)
     {
         try
