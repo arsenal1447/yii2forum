@@ -193,7 +193,7 @@ class SiteController extends BaseFrontController
                         'model' => $model
                 ]);
     }
-    //测试分支合并到主干的功能
+    //test branch merge to master
     public function actionResetPassword($token)
     {
         try
