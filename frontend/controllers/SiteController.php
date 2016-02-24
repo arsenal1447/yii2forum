@@ -15,7 +15,7 @@ use frontend\base\BaseFrontController;
 use common\models\Board;
 
 /**
- * Site controller
+ * Site controller  zxx add
  */
 class SiteController extends BaseFrontController
 {
