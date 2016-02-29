@@ -191,7 +191,8 @@ class User extends BaseActiveRecord implements IdentityInterface
 	 */
 	public function generateAuthKey()
 	{
-		$this->auth_key = Yii::$app->security->generateRandomKey();
+// 		$this->auth_key = Yii::$app->security->generateRandomKey();
+		$this->auth_key = Yii::$app->security->generateRandomString();
 	}
 
 	/**
