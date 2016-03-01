@@ -44,16 +44,16 @@ AppAsset::register($this);
                 $menuItems[] = [
                     'label' => '退出 (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
+                    //'linkOptions' => ['data-method' => 'get']
                 ];
             }
             $menuItems[] = ['label' => '脚本升级 ', 'url' => ['/upgrade/']];
-            
+
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => $menuItems,
             ]);
-			
+
             NavBar::end();
         ?>
 

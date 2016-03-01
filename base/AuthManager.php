@@ -99,7 +99,8 @@ class AuthManager extends DbManager
 		
 		Yii::trace($item instanceof Role ? "Checking role: $itemName" : "Checking permission: $itemName", __METHOD__);
 		
-		if (! $this->executeRule($item, $params))
+// 		if (! $this->executeRule($item, $params))
+		if (! $this->executeRule($user, $item, $params))
 		{
 			return false;
 		}
